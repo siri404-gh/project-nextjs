@@ -12,7 +12,25 @@
     "terminal.integrated.shell.linux": "/bin/bash"
   },
   // Add the IDs of extensions you want installed when the container is created.
-  "extensions": [],
+  "extensions": [
+    "ms-vscode.cpptools",
+    "adpyke.codesnap",
+    "codemooseus.vscode-devtools-for-chrome",
+    "ms-azuretools.vscode-docker",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "donjayamanne.githistory",
+    "eamodio.gitlens",
+    "ms-vsliveshare.vsliveshare",
+    "eg2.vscode-npm-script",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "visualstudioexptteam.vscodeintellicode",
+    "github.github-vscode-theme",
+    "vscode-icons-team.vscode-icons",
+    "aaron-bond.better-comments",
+    "coenraads.bracket-pair-colorizer"
+  ],
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [
     3001,
