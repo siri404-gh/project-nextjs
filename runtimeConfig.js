@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 
-const domain = 'https://sreeram.vercel.app';
+const domain = 'https://ww2.sreer.am';
 
 module.exports = {
   title: 'Title',
