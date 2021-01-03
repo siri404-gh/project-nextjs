@@ -13,7 +13,7 @@ const useStyles = makeStyles(() => ({
     borderBottom: 'solid 1px #f1f1f1',
   },
   innerListItem: {
-    padding: 4,
+    padding: 6,
     paddingLeft: 24,
     borderBottom: 'solid 1px #f1f1f1',
     cursor: 'pointer',

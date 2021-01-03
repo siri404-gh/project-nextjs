@@ -2,7 +2,7 @@ import auth0 from '@/lib/auth0';
 
 export default async (req, res) => {
   try {
-    if(req.query.redirectTo === '/') req.query.redirectTo = '/#';
+    if(req.query.redirectTo === '/') req.query.redirectTo = '/?loggedin=true';
 
     await auth0.handleLogin(req, res);
   } catch (error) {
