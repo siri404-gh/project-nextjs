@@ -3,7 +3,7 @@
   "hardReloadOnChange": false,
   "view": "browser",
   "container": {
-    "node": "12"
-  },
-  "startScript": "codesandbox"
+    "node": "12",
+    "startScript": "serve"
+  }
 }

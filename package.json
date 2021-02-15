@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "codesandbox": "npm run build && npm start",
-    "dev": "NODE_OPTIONS='--inspect' next dev -p 3001",
+    "serve": "npm run build && npm start",
+    "dev": "next dev -p 3001",
+    "debug": "NODE_OPTIONS='--inspect' next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "test": "jest --coverage",
