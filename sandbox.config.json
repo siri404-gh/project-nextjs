@@ -5,5 +5,5 @@
   "container": {
     "node": "12"
   },
-  "startScript": "dev"
+  "startScript": "codesandbox"
 }
