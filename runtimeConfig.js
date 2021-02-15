@@ -1,25 +1,25 @@
 /* eslint-disable camelcase */
 
-const domain = 'https://ww2.sreer.am';
+const domain = "https://ww2.sreer.am";
 
 module.exports = {
-  title: 'Title',
-  description: 'Description',
+  title: "Project NextJs",
+  description: "Description",
   seo: {
-    author: 'Sreeram Padmanabhan',
-    description: 'Some description here',
+    author: "Sreeram Padmanabhan",
+    description: "Some description here",
     domain,
-    gtmId: 'GTM-PBXD6SB',
-    keywords: '',
-    ogImage: `${domain}/img/og_image.jpg`,
-    ogImageAlt: '',
-    ogSiteName: '',
-    ogType: '',
-    ogUrl: '',
-    title: 'Title',
-    twitterId: '',
-    org: '',
-    orgImage: '',
+    gtmId: "GTM-PBXD6SB",
+    keywords: "",
+    ogImage: `${domain}/sections/dev.svg`,
+    ogImageAlt: "",
+    ogSiteName: "",
+    ogType: "",
+    ogUrl: "",
+    title: "Title",
+    twitterId: "",
+    org: "",
+    orgImage: "",
   },
   seed: {
     short_name: "Title",
@@ -28,20 +28,24 @@ module.exports = {
     background_color: "#ffffff",
     display: "standalone",
     theme_color: "#0563d8",
-    icons: [ {
-      src: "/img/icon-192.png",
-      type: "image/png",
-      sizes: "192x192",
-    }, {
-      src: "/img/icon-512.png",
-      type: "image/png",
-      sizes: "512x512",
-    }, {
-      src: "/img/maskable_icon.png",
-      sizes: "196x196",
-      type: "image/png",
-      purpose: "any maskable",
-    } ],
+    icons: [
+      {
+        src: "/img/icon-192.png",
+        type: "image/png",
+        sizes: "192x192",
+      },
+      {
+        src: "/img/icon-512.png",
+        type: "image/png",
+        sizes: "512x512",
+      },
+      {
+        src: "/img/maskable_icon.png",
+        sizes: "196x196",
+        type: "image/png",
+        purpose: "any maskable",
+      },
+    ],
   },
   sections: {
     "section-1": {
@@ -52,8 +56,8 @@ module.exports = {
       paid: true,
       links: [
         {
-          route: '/section-1/post',
-          title: 'Post',
+          route: "/section-1/post",
+          title: "Post",
         },
       ],
     },
@@ -65,8 +69,8 @@ module.exports = {
       paid: false,
       links: [
         {
-          route: '/section-2/post',
-          title: 'Post',
+          route: "/section-2/post",
+          title: "Post",
         },
       ],
     },
@@ -78,8 +82,8 @@ module.exports = {
       paid: false,
       links: [
         {
-          route: '/section-3/post',
-          title: 'Post',
+          route: "/section-3/post",
+          title: "Post",
         },
       ],
     },

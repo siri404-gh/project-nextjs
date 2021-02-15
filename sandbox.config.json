@@ -3,7 +3,6 @@
   "hardReloadOnChange": false,
   "view": "browser",
   "container": {
-    "node": "12",
-    "startScript": "serve"
+    "node": "12"
   }
 }
