@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-jest-auth0-stripe-boilerplate",
+  "name": "react-next-material-jest-auth0-stripe",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -65,5 +65,5 @@
     "webpack-manifest-plugin": "^3.0.0"
   },
   "keywords": [],
-  "description": "https://github.com/sreeramofficial/project-nextjs"
+  "description": "React, NextJS, Redux Saga, Material UI, Jest, Auth0, Stripe\nRepo: https://github.com/sreeramofficial/project-nextjs"
 }
