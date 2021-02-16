@@ -1,0 +1,27 @@
+{
+  "packageId": "com.sreer.am",
+  "host": "sreer.am",
+  "name": "Sreeram",
+  "launcherName": "Sreeram",
+  "display": "standalone",
+  "themeColor": "#0563D8",
+  "navigationColor": "#FFFFFF",
+  "backgroundColor": "#0563D8",
+  "enableNotifications": false,
+  "startUrl": "/",
+  "iconUrl": "https://sreer.am/img/icon-512.png",
+  "maskableIconUrl": "https://sreer.am/img/maskable_icon.png",
+  "monochromeIconUrl": "https://sreer.am/img/monochrome_icon.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "keystore.jks",
+    "alias": "upload"
+  },
+  "appVersionName": "2",
+  "appVersionCode": 2,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://sreer.am/manifest.json",
+  "fallbackType": "customtabs",
+  "appVersion": "2"
+}
