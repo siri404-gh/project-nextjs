@@ -1,9 +1,9 @@
 /* eslint-disable camelcase */
 
-const domain = "https://ww2.sreer.am";
+const domain = process.env.NEXT_PUBLIC_DOMAIN;
 
 module.exports = {
-  title: "Project NextJs",
+  title: "Project Next",
   description: "Description",
   seo: {
     author: "Sreeram Padmanabhan",
@@ -64,7 +64,7 @@ module.exports = {
     "section-2": {
       route: "/section-2",
       title: "Section 2",
-      img: "/sections/dev.svg",
+      img: "/sections/photos.svg",
       auth: true,
       paid: false,
       links: [

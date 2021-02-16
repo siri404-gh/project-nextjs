@@ -7,7 +7,7 @@ exports[`Bottombar renders with props 1`] = `
   >
     <button
       class="MuiButtonBase-root MuiBottomNavigationAction-root Mui-selected"
-      style="min-width: 25px;"
+      style="min-width: 25px; padding: 10px;"
       tabindex="0"
       type="button"
     >

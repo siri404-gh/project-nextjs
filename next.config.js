@@ -2,13 +2,12 @@
 const withPWA = require('next-pwa');
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 const path = require('path');
-
 const runtimeCaching = require('./runtimeCaching');
-const publicRuntimeConfig = require('./runtimeConfig');
+const { seed } = require('./src/config');
 
 module.exports = withPWA({
   productionBrowserSourceMaps: true,
-  webpack: (config, { isServer }) => {
+  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     config.module.rules.push(
       {
         test: /\.md$/,
@@ -35,15 +34,19 @@ module.exports = withPWA({
       ...config.plugins,
       new WebpackManifestPlugin({
         fileName: path.resolve(__dirname, './public/static/manifest.json'),
-        seed: publicRuntimeConfig.seed,
+        // basePath: '',
+        seed,
         generate: seed => seed,
       }),
     ];
 
     return config;
   },
-  publicRuntimeConfig,
   typescript: {
+    // !! WARN !!
+    // Dangerously allow production builds to successfully complete even if
+    // your project has type errors.
+    // !! WARN !!
     ignoreBuildErrors: true,
   },
   pwa: {
@@ -52,7 +55,8 @@ module.exports = withPWA({
     register: true,
     scope: '/',
     sw: 'service-worker.js',
-    exclude: [ 'build-manifest.json', 'react-loadable-manifest.json' ],
+    exclude: [ '/api/*', 'build-manifest.json', 'react-loadable-manifest.json' ],
     runtimeCaching,
+    //...
   },
 });

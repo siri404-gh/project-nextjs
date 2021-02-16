@@ -51,7 +51,6 @@ const Sidebar: FunctionComponent<Props> = ({ children, isOpen, onOpen, onClose, 
   return <SwipeableDrawer
     className='Sidebar'
     variant='temporary'
-    swipeAreaWidth={50}
     anchor='left'
     classes={{ paper: classes.paper }}
     open={isOpen}

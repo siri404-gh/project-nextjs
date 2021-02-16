@@ -1,6 +1,8 @@
-import React, { useState, Fragment, FunctionComponent } from 'react';
+import React, { useState, FunctionComponent } from 'react';
 import { makeStyles } from '@material-ui/core';
 import { useRouter } from 'next/router';
+import * as Sentry from "@sentry/react";
+import cn from 'classnames';
 
 import Navbar, { Props as navbarPropsType } from '@/components/functional/Navbar/Navbar';
 import BottomBar, { Props as bottomBarPropsType, bottomListType } from '@/components/functional/Bottombar/Bottombar';
@@ -19,7 +21,7 @@ export interface Props {
   sections?: bottomListType[],
 }
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles(theme => ({
   bottomNav: {
     position: 'fixed',
     bottom: 0,
@@ -54,7 +56,7 @@ const Layout: FunctionComponent<Props> = ({ seoProps, navbarProps, sidebarProps,
   const onSidebarClose = () => setIsSidebarOpen(false);
   const onBottomNavItemChange = val => router.push(sections[val].route);
 
-  return <Fragment>
+  return <Sentry.ErrorBoundary fallback={"An error has occurred"}>
     <Seo {...seoProps} />
     <Navbar
       {...navbarProps}
@@ -68,7 +70,7 @@ const Layout: FunctionComponent<Props> = ({ seoProps, navbarProps, sidebarProps,
       <SidebarContent
         {...sidebarContentProps} />
     </Sidebar>
-    <div className={classes.contentWrapper}>
+    <div className={cn(classes.contentWrapper, 'layout')}>
       <div className={classes.shift} />
       {children}
       <div className={classes.shift} />
@@ -77,7 +79,7 @@ const Layout: FunctionComponent<Props> = ({ seoProps, navbarProps, sidebarProps,
       {...bottomBarProps}
       onChange={onBottomNavItemChange}
       className={classes.bottomNav} />
-  </Fragment>
+  </Sentry.ErrorBoundary>
 };
 
 Layout.defaultProps = {

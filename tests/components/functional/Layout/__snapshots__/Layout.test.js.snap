@@ -69,10 +69,10 @@ exports[`Layout Should close sidebar when clicked outside sidebar 1`] = `
   </header>
   <div
     class="PrivateSwipeArea-root-107 PrivateSwipeArea-anchorLeft-108"
-    style="width: 50px;"
+    style="width: 20px;"
   />
   <div
-    class="makeStyles-contentWrapper-92"
+    class="makeStyles-contentWrapper-92 layout"
   >
     <div
       class="makeStyles-shift-93"
@@ -155,10 +155,10 @@ exports[`Layout Should open sidebar when left button in navbar is clicked 1`] = 
   </header>
   <div
     class="PrivateSwipeArea-root-80 PrivateSwipeArea-anchorLeft-81"
-    style="width: 50px;"
+    style="width: 20px;"
   />
   <div
-    class="makeStyles-contentWrapper-65"
+    class="makeStyles-contentWrapper-65 layout"
   >
     <div
       class="makeStyles-shift-66"
@@ -238,10 +238,10 @@ exports[`Layout Should render without props 1`] = `
   </header>
   <div
     class="PrivateSwipeArea-root-17 PrivateSwipeArea-anchorLeft-18"
-    style="width: 50px;"
+    style="width: 20px;"
   />
   <div
-    class="makeStyles-contentWrapper-2"
+    class="makeStyles-contentWrapper-2 layout"
   >
     <div
       class="makeStyles-shift-3"

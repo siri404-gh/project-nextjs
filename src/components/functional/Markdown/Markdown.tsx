@@ -23,7 +23,7 @@ const useStyles = makeStyles(theme => ({
 const renderers = {
   code: ({ language, value }) => {
 
-    return <SyntaxHighlighter style={theme} language={language} showLineNumbers={false} customStyle={{ fontSize: 12 }}>{value}</SyntaxHighlighter>
+    return <SyntaxHighlighter style={theme} language={language} showLineNumbers={false} customStyle={{ fontSize: 12, background: '#282c34' }}>{value}</SyntaxHighlighter>
   },
   link: ({ href, children }) => {
     return <Link href={href}>{children}</Link>
@@ -70,7 +70,7 @@ const renderers = {
     const classes = useStyles();
     return (
       <li className={classes.li}>
-        <Typography component='span'>{children}</Typography>;
+        <Typography component='span'>{children}</Typography>
       </li>
     );
   },

@@ -68,10 +68,10 @@ exports[`App Should render without props 1`] = `
   </header>
   <div
     class="PrivateSwipeArea-root-17 PrivateSwipeArea-anchorLeft-18"
-    style="width: 50px;"
+    style="width: 20px;"
   />
   <div
-    class="makeStyles-contentWrapper-2"
+    class="makeStyles-contentWrapper-2 layout"
   >
     <div
       class="makeStyles-shift-3"

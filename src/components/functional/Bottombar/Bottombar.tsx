@@ -34,10 +34,11 @@ const Bottombar: FunctionComponent<Props> = ({ className, list, value, onChange,
       className={className}>
       {Object.values(list).map((item: bottomListType) => (
         <BottomNavigationAction
+          showLabel={false}
           key={item.title}
           label={item.title}
           icon={getIcon(item.img, item.title)}
-          style={{ minWidth: 25 }} />
+          style={{ minWidth: 25, padding: 10 }} />
       ))}
     </BottomNavigation>
   );

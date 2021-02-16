@@ -4,10 +4,11 @@ import {
   Step,
   StepLabel,
   makeStyles,
-  Link as _Link,
+  Link,
 } from '@material-ui/core';
-import Link from 'next/link';
+import _Link from 'next/link';
 import cn from 'classnames';
+import { AiFillHome } from 'react-icons/ai';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -49,16 +50,16 @@ const Navigation: FunctionComponent<Props> = ({ className, prev, next }) => {
       <Step>
         <StepLabel icon={null}>
           {prev
-            ? <_Link href={prev.route} className={classes.leftLink}>{prev.title}</_Link>
-            : <_Link href={'/'}>Home</_Link>
+            ? <_Link href={prev.route} scroll><Link className={classes.leftLink}>{prev.title}</Link></_Link>
+            : <_Link href={'/'} scroll><Link><AiFillHome /></Link></_Link>
           }
         </StepLabel>
       </Step>
       <Step>
         <StepLabel icon={null}>
           {next
-            ? <_Link href={next.route} className={classes.leftLink}>{next.title}</_Link>
-            : <_Link href={'/'}>Home</_Link>
+            ? <_Link href={next.route} scroll><Link className={classes.rightLink}>{next.title}</Link></_Link>
+            : <_Link href={'/'} scroll><Link><AiFillHome /></Link></_Link>
           }
         </StepLabel>
       </Step>
